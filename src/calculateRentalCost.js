@@ -9,13 +9,15 @@ function calculateRentalCost(days) {
   const cost = costCar * days;
   const longDays = 7;
   const mediumDays = 3;
+  const bigDiscount = 50;
+  const mediumDiscount = 20;
 
   if (days >= mediumDays) {
-    totalCost = cost - 20;
+    totalCost = cost - mediumDiscount;
   }
 
   if (days >= longDays) {
-    totalCost = cost - 50;
+    totalCost = cost - bigDiscount;
   }
 
   if (days < mediumDays) {
